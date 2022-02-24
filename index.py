@@ -342,6 +342,11 @@ def login():
         login_attempts = login_attempts + 1
         #TODO mto ele da erro e poco o botao n abre
         # time.sleep(10)
+        
+        if clickBtn(images['connect2'], name='connect2Btn', timeout = 10):
+        # print('sucessfully login, treasure hunt btn clicked')
+            login_attempts = 0
+            # time.sleep(15)
 
     if clickBtn(images['select-wallet-2'], timeout=8):
         # sometimes the sign popup appears imediately
